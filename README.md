@@ -5,7 +5,7 @@ A Claude Code skill for creating, reviewing, and improving agent skills followin
 ## Install
 
 ```bash
-npx skills add aguferreira/crafting-skills
+npx skills add agustinn1233/crafting-skills
 ```
 
 ## What it does
@@ -29,12 +29,14 @@ Just describe what you need in natural language:
 
 ```
 crafting-skills/
-├── SKILL.md                    # Core workflow — loaded on trigger (~130 lines)
-└── references/
-    ├── checklist.md            # Full official Anthropic quality checklist (27 items)
-    ├── patterns.md             # Freedom levels, naming, templates, I/O examples
-    ├── anti-patterns.md        # 11 anti-patterns with before/after fixes
-    └── evaluation.md           # Evaluation-driven development guide + 3 real examples
+├── README.md
+└── crafting-skills/                # skill directory
+    ├── SKILL.md                    # Core workflow — loaded on trigger (~130 lines)
+    └── references/
+        ├── checklist.md            # Full official Anthropic quality checklist (27 items)
+        ├── patterns.md             # Freedom levels, naming, templates, I/O examples
+        ├── anti-patterns.md        # 11 anti-patterns with before/after fixes
+        └── evaluation.md           # Evaluation-driven development guide + 3 real examples
 ```
 
 Uses progressive disclosure — reference files are only loaded when needed, keeping context usage minimal.
@@ -49,3 +51,7 @@ This skill dog-foods its own guidelines:
 - No time-sensitive information
 - Consistent terminology throughout
 - Copyable workflow checklist for multi-step processes
+
+## License
+
+MIT
